@@ -1,63 +1,60 @@
 import React, { useState } from "react";
 import "./Header.css";
 import { LuMenu } from "react-icons/lu";
-import { Link } from "react-router-dom";
+import { AiOutlineClose } from "react-icons/ai";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const location = useLocation();
 
-  const toggleMenu = () => {
-    setShowMenu(!showMenu);
-  };
+  const toggleMenu = () => setShowMenu((prev) => !prev);
+
+  const menuItems = [
+    { name: "Home", path: "/" },
+    { name: "Education", path: "/education" },
+    { name: "Experience", path: "/experience" },
+    { name: "Projects", path: "/projects" },
+    { name: "Open Source", path: "/opensource" },
+    { name: "Contact Me", path: "/contactme" },
+  ];
 
   return (
-    <div className="react-reveal">
+    <>
       <header className="header">
         <div className="logo">
-          {/* <span>{"<"}</span> */}
           <span className="logo-text">GauravSingh</span>
-          {/* <span>{"/>"}</span> */}
         </div>
 
-        {/* for menu icon */}
-        <span className="menu-icon">
-          <LuMenu size="35px" onClick={toggleMenu} />
+        <span
+          className="menu-icon"
+          aria-expanded={showMenu}
+          aria-label="Toggle menu"
+          onClick={toggleMenu}
+        >
+          {showMenu ? <AiOutlineClose size="35px" /> : <LuMenu size="35px" />}{" "}
+          {/* Conditionally render icons */}
         </span>
 
-        <ul className={`menu ${showMenu ? "menu-open" : ""}`}>
-          <li>
-            <Link to="/" className="menu-items">
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link to="/education" className="menu-items">
-              Education
-            </Link>
-          </li>
-          <li>
-            <Link to="/experience" className="menu-items">
-              Experience
-            </Link>
-          </li>
-          <li>
-            <Link to="/projects" className="menu-items">
-              Projects
-            </Link>
-          </li>
-          <li>
-            <Link to="/opensource" className="menu-items">
-              Open Source
-            </Link>
-          </li>
-          <li>
-            <Link to="/contactme" className="menu-items">
-              Contact Me
-            </Link>
-          </li>
+        <ul className={`menu ${showMenu ? "menu-open show" : ""}`}>
+          {menuItems.map(({ name, path }) => (
+            <li key={name}>
+              <Link
+                to={path}
+                className="menu-items"
+                onClick={() => {
+                  if (path !== location.pathname) {
+                    setShowMenu(false);
+                  }
+                }}
+              >
+                {name}
+              </Link>
+            </li>
+          ))}
         </ul>
       </header>
-    </div>
+    </>
   );
 };
 

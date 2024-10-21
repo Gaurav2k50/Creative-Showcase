@@ -12,7 +12,7 @@ import ContactMe from "./components/ContactMe/ContactMe";
 
 const App = () => {
   return (
-    <div>
+    <>
       <Header />
       <Routes>
         <Route
@@ -31,7 +31,7 @@ const App = () => {
         <Route path="/contactme" element={<ContactMe />} />
       </Routes>
       <Footer />
-    </div>
+    </>
   );
 };
 

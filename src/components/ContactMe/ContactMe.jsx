@@ -81,7 +81,7 @@ const ContactMe = () => {
           </div>
           <div className="resume-btn-div">
             <a
-              href="https://drive.google.com/file/d/1ysAhf2YjdZGL1oh45RB-DqhX1vGkmG27/view?usp=drivesdk"
+              href="https://drive.google.com/file/d/1B45nr0ACIdaSdUavSH45nuZsdz1SD1iN/view?usp=drive_link"
               className="resume-main-button"
               target="_blank"
             >
