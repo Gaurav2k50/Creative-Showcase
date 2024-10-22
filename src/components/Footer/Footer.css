@@ -10,6 +10,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #f8f9fa;
+  position: relative;
+  margin-top: auto;
 }
 
 .footer-sub-div {
@@ -23,12 +26,25 @@
 .footer-p {
   font-size: 16px;
   font-weight: 700;
-  display: block;
   color: #7f8daa;
+  text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
+  .footer-p {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
   .footer-main-div {
-    margin-top: 30rem;
+    margin-top: 520px;
+    height: auto;
+    padding: 10px 0;
+    position: relative;
+  }
+
+  .footer-p {
+    font-size: 12px;
   }
 }

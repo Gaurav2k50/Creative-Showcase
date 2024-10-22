@@ -23,16 +23,16 @@ const SkillSection = () => {
             <p className="skill-h">MERN Stack Development</p>
             <ul className="skill-ul">
               <li className="skill-li">
-                <SiMongodb size="60px" className="mongodb" />
+                <SiMongodb className="mongodb" />
               </li>
               <li className="skill-li">
-                <SiExpress size="60px" className="express" />
+                <SiExpress className="express" />
               </li>
               <li className="skill-li">
-                <FaReact size="60px" className="react" />
+                <FaReact className="react" />
               </li>
               <li className="skill-li">
-                <DiNodejs size="140px" className="node" />
+                <DiNodejs className="node" />
               </li>
             </ul>
             <div className="skill-text-div">

@@ -22,7 +22,6 @@ body {
   width: 100%;
   margin: 0 auto;
   background-color: #a6e1fa;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   position: sticky;
   top: 0;
@@ -91,10 +90,13 @@ body {
 
 @media screen and (max-width: 768px) {
   .header {
+    top: 0;
+    z-index: 1000;
+    position: sticky;
+    padding: 1rem 1rem;
     flex-direction: row;
     align-items: center;
-    position: relative;
-    padding: 1rem 1rem;
+    background-color: #a6e1fa;
   }
 
   .menu {

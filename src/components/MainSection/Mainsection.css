@@ -1,16 +1,13 @@
-/* Reset Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body Styles */
 body {
   background-color: #edf9fe;
 }
 
-/* Main Section Styles */
 .main-section {
   width: 100%;
   height: 600px;
@@ -19,29 +16,25 @@ body {
   justify-content: center;
 }
 
-/* Main Section Sub Container Styles */
 .main-section-sub-container {
   width: 90%;
   height: 599.896px;
   display: flex;
 }
 
-/* Left Main Container Styles */
 .left-main-container {
-  width: 50%;
+  width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* Left Mid Container Styles */
 .left-mid-container {
   width: 100%;
   height: 378.781px;
 }
 
-/* Greeting Text Styles */
 .greeting-text {
   height: 55px;
   width: 100%;
@@ -51,7 +44,6 @@ body {
   color: #001c55;
 }
 
-/* Greeting Text Paragraph Styles */
 .greeting-text-p {
   font-size: 20px;
   height: 140px;
@@ -63,12 +55,11 @@ body {
   align-items: center;
 }
 
-/* Social Media Icons Styles */
 .social-media-div {
+  width: 100%;
   height: 60px;
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
   gap: 15px;
   align-items: center;
 }
@@ -83,7 +74,6 @@ body {
   justify-content: center;
 }
 
-/* Social Media Icons Specific Colors */
 .github {
   background-color: #15181e;
 }
@@ -151,14 +141,12 @@ body {
   color: #ffc83d;
 }
 
-/* Portfolio Repo Button Styles */
 .portfolio-repo-btn {
   height: 47px;
   width: 100%;
   margin-top: 1rem;
 }
 
-/* Main Button Styles */
 .main-btn {
   width: 262px;
   height: 100%;
@@ -180,12 +168,10 @@ body {
   transition: 0.33s ease-in-out;
 }
 
-/* Anchor Tag Styles */
 .a {
   text-decoration: none;
 }
 
-/* Right Main Container Styles */
 .right-main-container {
   width: 50%;
   height: 100%;
@@ -194,50 +180,61 @@ body {
   justify-content: center;
 }
 
-/* Main Image Styles */
 .main-image {
   width: 100%;
   height: 100%;
 }
 
-/* For screens smaller than 480px (mobile phones) */
 @media screen and (max-width: 480px) {
   .greeting-text-p {
     margin-top: 1rem;
   }
 
   .social-media-div {
-    width: 250px;
-    height: 120px;
-    margin-left: -1rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    margin-top: 30px;
+    justify-content: center;
+  }
+
+  .social-media-icons {
+    margin: 0 6px;
   }
 
   .portfolio-repo-btn {
-    margin-left: -1rem;
-  }
-  .social-media-icons {
-    margin: -5rem 1px;
-    margin-top: 2rem;
-  }
-
-  .main-btn {
-    margin-top: 4.5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
-  .greeting-image-div {
-    margin-top: -1.5rem;
-    margin-right: 17rem;
-    width: 10px;
-    height: 50px;
+  .left-mid-container {
+    height: 100%;
   }
 
   .right-main-container {
     margin-top: 4rem;
     width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .greeting-image-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .main-image {
+    width: 80%;
+    height: auto;
   }
 }
 
-/* For screens 768px between 480px (mobile phones) */
 @media only screen and (max-width: 767px) {
   .main-section-sub-container {
     display: flex;
@@ -254,6 +251,10 @@ body {
     order: 2;
     margin-bottom: 20px;
     flex-basis: 20%;
+  }
+
+  .name-text {
+    width: 100%;
   }
 
   .greeting-text {
@@ -282,13 +283,11 @@ body {
   }
 
   .main-image {
-    margin-top: 50px;
-    width: 320px;
-    height: 280px;
+    width: 100%;
+    height: 100%;
   }
 }
 
-/* For screens between 768px and 1024px (tablets) */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .greeting-text {
     font-size: 36px;
@@ -318,7 +317,6 @@ body {
   }
 }
 
-/* For screens larger than 1024px (desktops) */
 @media only screen and (min-width: 1025px) {
   .main-section {
     padding: 50px 0;

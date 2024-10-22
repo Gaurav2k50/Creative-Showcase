@@ -1,7 +1,7 @@
 import React from "react";
 import "./Mainsection.css";
-import GauravImg from "../../assets/images/Gauravmainimg.jpeg";
 import { RiStarFill } from "react-icons/ri";
+import GauravImg from "../../assets/images/Gauravmainimg.jpeg";
 import {
   FaGithub,
   FaYoutube,
@@ -18,7 +18,9 @@ const Mainsection = () => {
       <div className="main-section-sub-container">
         <div className="left-main-container">
           <div className="left-mid-container">
-            <h1 className="greeting-text">Gaurav Singh</h1>
+            <div className="name-text">
+              <h1 className="greeting-text">Gaurav Singh</h1>
+            </div>
             <p className="greeting-text-p">
               A passionate individual who always thrives to work on <br />
               end-to-end products which develop sustainable and <br /> scalable
