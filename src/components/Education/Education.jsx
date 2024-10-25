@@ -9,7 +9,6 @@ import irjcs from "../../assets/images/irjcs.png";
 const Education = () => {
   return (
     <div className="education-main-div">
-      {/* First Section: Education Heading */}
       <div className="education-main">
         <div className="heading-img-div">
           <img src={education} alt="" className="education-img" />
@@ -19,7 +18,6 @@ const Education = () => {
           <h3 className="heading-sub-div">
             Basic Qualification and Certifications
           </h3>
-          {/* Competitive Sites Section (You can add more links here if needed) */}
           <div className="competitive-site-main-div">
             <ul className="dev-icon">
               <li className="competitive-sites-inline">
@@ -39,31 +37,24 @@ const Education = () => {
         </div>
       </div>
 
-      {/* Second Section: Education Details */}
       <div className="education-degree-main-div">
         <h1 className="educations-headers">Degree Received</h1>
-        {/* Education Card */}
         <div className="degree-card">
-          {/* College Logo */}
           <div className="degree-card-img">
             <img src={collgLogo} alt="" className="degree-img" />
           </div>
-          {/* College Details */}
           <div className="degree-card-body">
             <div className="degree-card-sub-body">
-              {/* College Name and Degree */}
               <div className="body-header">
                 <h2 className="degree-h2">
                   Greater Noida Institute of Technology
                 </h2>
                 <h3 className="degree-h3">B.Tech. in Information Technology</h3>
               </div>
-              {/* Duration */}
               <div className="body-header-duration">
                 <h3 className="body-header-h3">2021-2024</h3>
               </div>
             </div>
-            {/* Description of Education */}
             <div className="body-content">
               <p>
                 ⚡ I have studied basic software engineering subjects like DS,
@@ -80,7 +71,6 @@ const Education = () => {
                 student efficiency and administrative excellence.
               </p>
             </div>
-            {/* Visit Website Button */}
             <a
               href="https://www.gniotgroup.edu.in/"
               className="visit-a"
@@ -98,7 +88,6 @@ const Education = () => {
       <div className="certs-header-div">
         <h1 className="certs-h1">Certifications</h1>
         <div className="cert-body-div">
-          {/* Certification 1 */}
           <div className="cert-card">
             <a
               href="https://drive.google.com/file/d/1KdhyBOLWxbAkA8Oasu3osehSTOF3LfMg/view?usp=drivesdk"
@@ -114,7 +103,6 @@ const Education = () => {
             </div>
           </div>
 
-          {/* Certification 2 */}
           <div className="cert-card">
             <a
               href="https://drive.google.com/file/d/1zr8Ol6RfdGMwNDgekR7l_Zazz-3Cj2M_/view?usp=drivesdk"
@@ -130,7 +118,6 @@ const Education = () => {
             </div>
           </div>
 
-          {/* Certification 3 */}
           <div className="cert-card">
             <a
               href="https://drive.google.com/file/d/1zlRnVNtEepploe8XhE5HdxJeGBZFz-5D/view?usp=drivesdk"

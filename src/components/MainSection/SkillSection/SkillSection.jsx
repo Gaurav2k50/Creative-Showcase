@@ -4,7 +4,7 @@ import skillMern from "../../../assets/images/skillmern.png";
 import { SiMongodb } from "react-icons/si";
 import { SiExpress } from "react-icons/si";
 import { FaReact } from "react-icons/fa6";
-import { DiNodejs } from "react-icons/di";
+import { FaNodeJs } from "react-icons/fa";
 
 const SkillSection = () => {
   return (
@@ -23,16 +23,16 @@ const SkillSection = () => {
             <p className="skill-h">MERN Stack Development</p>
             <ul className="skill-ul">
               <li className="skill-li">
-                <SiMongodb className="mongodb" />
+                <SiMongodb className="icon mongodb" />
               </li>
               <li className="skill-li">
-                <SiExpress className="express" />
+                <SiExpress className="icon express" />
               </li>
               <li className="skill-li">
-                <FaReact className="react" />
+                <FaReact className="icon react" />
               </li>
               <li className="skill-li">
-                <DiNodejs className="node" />
+                <FaNodeJs className="icon node" />
               </li>
             </ul>
             <div className="skill-text-div">

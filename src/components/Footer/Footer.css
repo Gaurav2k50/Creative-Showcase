@@ -30,21 +30,15 @@
   text-align: center;
 }
 
-@media only screen and (max-width: 768px) {
-  .footer-p {
-    font-size: 14px;
-  }
-}
-
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
   .footer-main-div {
-    margin-top: 520px;
+    /* margin-top: 520px; */
     height: auto;
     padding: 10px 0;
     position: relative;
   }
 
   .footer-p {
-    font-size: 12px;
+    font-size: 14px;
   }
 }

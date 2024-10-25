@@ -46,68 +46,80 @@ body {
   display: flex;
 }
 
+.skill-ul {
+  display: flex;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 120px;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skill-li {
+  list-style: none;
+}
+
+.skill-li .icon {
+  font-size: 24px;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.mongodb {
+  color: #23da20;
+  background-color: #5b4209;
+}
+
+.express {
+  color: white;
+  background-color: #4b4a4d;
+}
+
+.react {
+  color: white;
+  background-color: #1d85bb;
+}
+
+.node {
+  color: white;
+  background-color: #80dc2a;
+}
+
 .skill-left {
   width: 50%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: -25px;
 }
 
 .mern-png {
   width: 100%;
-  height: 350px;
+  height: 420px;
   background-color: #edf9fe;
 }
 
 .skill-right {
   width: 50%;
   height: 100%;
+  margin-top: 2rem;
 }
 
 .skill-h {
   font-size: 30px;
   color: #001c55;
   width: 100%;
-  height: 80px;
   display: flex;
-  /* align-items: baseline; */
-  /* align-items: center; */
-  /* justify-content: center; */
-}
-
-.skill-ul {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  height: 150px;
-  /* margin-top: -2rem; */
-  gap: 2rem;
-  align-items: center;
-  justify-content: center;
-  margin-left: -3.5rem;
-}
-
-.mongodb {
-  color: #55ad47;
-}
-
-.react {
-  color: #61dafb;
-}
-
-.express {
-}
-
-.node {
-  color: #4aaa4d;
-  /* font-size: 140px; */
-}
-
-.skill-text-div {
-  width: 100%;
-  height: 230px;
 }
 
 .skill-text {
@@ -115,6 +127,7 @@ body {
   line-height: 1.5rem;
   font-size: 20px;
   color: #7f8daa;
+  text-align: justify;
 }
 
 @media screen and (max-width: 768px) {
@@ -122,17 +135,56 @@ body {
     width: 100%;
     height: 100%;
     margin-top: 210px;
-    /* background-color: tomato; */
   }
 
-  .skill-li .mongodb,
-  .skill-ul .skill-li .express,
-  .skill-ul .skill-li .react {
-    font-size: 40px;
+  .skill-ul {
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 120px;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
   }
 
-  .skill-ul .skill-li .node {
-    font-size: 80px;
+  .skill-li {
+    list-style: none;
+  }
+
+  .skill-li .icon {
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .mongodb {
+    color: #23da20;
+    background-color: #5b4209;
+  }
+
+  .express {
+    color: white;
+    background-color: #4b4a4d;
+  }
+
+  .react {
+    color: white;
+    background-color: #1d85bb;
+  }
+
+  .node {
+    color: white;
+    background-color: #80dc2a;
   }
 
   .skill-sub-div {
@@ -144,7 +196,6 @@ body {
   .mern-png {
     width: 100%;
     height: 100%;
-    /* background-color: tomato; */
   }
 
   .skill-right {

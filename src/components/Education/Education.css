@@ -1,32 +1,26 @@
-/* Resetting default margin, padding, and box-sizing */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body Styles */
 body {
   background-color: #edf9fe;
 }
 
-/* Education Main Container */
 .education-main-div {
   width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
-  /* background-color: violet; */
 }
 
 .education-main {
   width: 90%;
   height: 414px;
   display: flex;
-  /* background-color: aqua;   */
 }
 
-/* Heading Image Section */
 .heading-img-div {
   width: 50%;
   height: 100%;
@@ -37,7 +31,6 @@ body {
   height: 100%;
 }
 
-/* Heading Text Section */
 .heading-text-div {
   width: 50%;
   height: 100%;
@@ -70,10 +63,9 @@ body {
   justify-content: center;
 }
 
-/* Competitive Site Icons Section */
 .competitive-site-main-div {
   width: 100%;
-  height: 86px;
+  height: 100%;
   margin-top: 1.48rem;
   flex-wrap: wrap;
 }
@@ -98,11 +90,9 @@ body {
   justify-content: center;
 }
 
-/* Education Degree Section */
 .education-degree-main-div {
   width: 81%;
   height: 100%;
-  /* background-color: red; */
   margin-top: 4rem;
 }
 
@@ -116,7 +106,7 @@ body {
   align-items: center;
   justify-content: center;
   color: #001c55;
-  margin-top: 2.75rem;
+  margin-top: 1.2rem;
 }
 
 .degree-card {
@@ -148,23 +138,23 @@ body {
 }
 
 .degree-card-sub-body {
-  background-color: #85b7d5;
   width: 100%;
   height: 114px;
   display: flex;
+  background-color: #85b7d5;
   border-top-left-radius: 0.6rem;
   border-top-right-radius: 0.6rem;
 }
 
 .body-header {
-  width: 78%;
+  gap: 1.1rem;
+  width: 100%;
   height: 100%;
   display: flex;
+  padding: 0.5rem;
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
-  gap: 1.1rem;
-  padding: 0.5rem;
 }
 
 .degree-h2,
@@ -188,23 +178,23 @@ body {
 }
 
 .body-header-h3 {
+  display: flex;
   font-size: 16px;
   font-weight: 700;
   color: #001c55;
-  display: flex;
   justify-content: flex-end;
 }
 
 .body-content {
   width: 100%;
   height: 190px;
+  display: flex;
+  padding: 1rem;
   font-size: 16px;
   color: #425984;
-  display: flex;
+  line-height: 1.3rem;
   flex-direction: column;
   justify-content: space-around;
-  padding: 1rem;
-  line-height: 1.3rem;
 }
 
 .visit-a {
@@ -234,14 +224,12 @@ body {
 }
 
 .certs-header-div {
-  /* background-color: gray; */
   width: 81%;
   height: 350px;
   margin-top: 5.8rem;
 }
 
 .certs-h1 {
-  /* background-color: #425984; */
   width: 100%;
   height: 38px;
   font-size: 35px;
@@ -256,9 +244,8 @@ body {
 .cert-body-div {
   width: 100%;
   height: 198px;
-  /* border: 1px solid black; */
-  margin-top: 1.5rem;
   display: flex;
+  margin-top: 1.5rem;
   align-items: center;
   justify-content: space-around;
 }
@@ -269,7 +256,6 @@ body {
   border-radius: 6px;
   box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
     rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
-  /* background-color: yellow; */
 }
 
 .cert-img-div {
@@ -278,17 +264,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: lightslategrey;
-  border-top-right-radius: 6px;
   border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  background-color: lightslategrey;
 }
 
 .cart-img {
   width: 100%;
   height: 100%;
-  background-color: lightblue;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
+  background-color: lightblue;
 }
 
 .cart-img2 {
@@ -308,16 +294,14 @@ body {
 .cert-body {
   width: 100%;
   height: 44%;
-  /* background-color: #425984; */
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
   padding: 0.3rem;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .cert-body-h2 {
-  /* background-color: burlywood; */
   width: 100%;
   height: 26px;
   font-size: 20px;
@@ -329,7 +313,6 @@ body {
 }
 
 .cert-body-h3 {
-  /* background-color: red; */
   width: 100%;
   height: 26px;
   font-size: 18px;
@@ -349,9 +332,8 @@ body {
 
   .body-header-duration {
     display: flex;
-    height: 10px;
+    height: 100%;
     width: 100%;
-    margin-top: -2.3rem;
     padding: 0.3rem;
   }
 
@@ -368,7 +350,10 @@ body {
   }
 
   .body-content {
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 1.5rem;
+    text-align: justify;
+    padding: 0.5rem;
   }
 
   .degree-card {
@@ -384,9 +369,20 @@ body {
   .degree-card-img {
     height: 200px;
   }
+
+  .visit-btn-p {
+    margin-top: 110px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
+  .degree-card-body {
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+
   .education-main-div {
     height: 135vh;
   }
@@ -401,12 +397,11 @@ body {
   }
 
   .education-degree-main-div {
-    margin-top: 14rem;
-    height: 650px;
+    margin-top: 4px;
+    height: 100%;
   }
 
   .heading-text-div {
-    /* background-color: #85b7d5; */
     width: 100%;
   }
 
@@ -428,23 +423,19 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: 100%;
     align-items: center;
     justify-content: center;
   }
 
   .degree-card-img {
-    background-color: white;
     width: 100%;
-    margin-top: 9rem;
+    margin-top: 5rem;
   }
 
   .degree-img {
     width: 150px;
     height: 100%;
-  }
-
-  .degree-card-body {
-    width: 100%;
   }
 
   .certs-header-div {

@@ -13,7 +13,6 @@ body {
   height: 105vh;
   display: flex;
   align-items: center;
-  /* background-color: gray; */
   flex-direction: column;
 }
 
@@ -25,7 +24,6 @@ body {
 .experience-heading-img-div {
   width: 50%;
   height: 65vh;
-  /* background-color: wheat; */
 }
 
 .experience-heading-img {
@@ -35,10 +33,8 @@ body {
 .experience-heading-text-div {
   width: 50%;
   height: 65vh;
-  /* background-color: yellow; */
   display: flex;
   align-items: center;
-  /* justify-content: center; */
   flex-direction: column;
 }
 
@@ -49,7 +45,6 @@ body {
   line-height: 55px;
   display: block;
   color: #001c55;
-  /* background-color: red; */
   margin-top: 2rem;
   display: flex;
   justify-content: center;
@@ -67,7 +62,6 @@ body {
   align-items: center;
   justify-content: center;
   color: #001c55;
-  /* background-color: aquamarine; */
 }
 
 .experience-heading-text-p {
@@ -77,66 +71,73 @@ body {
   font-size: 20px;
   line-height: 30px;
   text-align: center;
-  /* background-color: blue; */
   margin-top: 0.7rem;
 }
 
 .experience-accord {
   width: 90%;
   height: 169px;
-  /* background-color: aquamarine; */
   margin-top: 3.1rem;
 }
 
 .experience-accord-li {
   width: 100%;
-  height: 53.33px;
-  /* background-color: violet; */
   display: flex;
-  align-items: center;
+  flex-direction: column;
   border: 1px solid #85b7d5;
   border-radius: 5px;
+  transition: all 0.3s ease;
 }
 
 .experience-accord-ul {
-  gap: 0.2rem;
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
 }
 
 .experience-accord-li-div {
   width: 100%;
-  height: 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* background-color: rgb(125, 54, 54); */
-  margin: 20px;
+  padding: 1rem;
   font-size: 16px;
   font-weight: 500;
 }
 
-@media screen and (max-width: 600px) {
-  .experience-heading-img {
-    width: 100%;
-    height: 380px;
-  }
-
-  .experience-heading-text-div {
-    margin-top: -100px;
-  }
-
-  .experience-heading-text-div {
-    gap: 0.6rem;
-  }
-
-  .experience-main-div {
-  }
+.dropdown {
+  width: 100%;
+  background-color: #f3f3f3;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  border: 1px solid #85b7d5;
+  border-radius: 5px;
 }
 
-@media screen and (max-width: 768px) {
-  .experience-main-div {
-    /* height: 0; */
+.dropdown li {
+  padding: 0.5rem 0;
+}
+
+@media screen and (max-width: 600px) {
+  .experience-heading-img-div {
+    width: 100%;
+    height: 100%;
+  }
+
+  .experience-heading-img {
+    width: 100%;
+    height: 280px;
+    background-color: tomato;
+  }
+
+  .experience-heading-text-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.6rem;
+    width: 100%;
+    height: 100%;
   }
 
   .experience-heading-div {
@@ -145,21 +146,9 @@ body {
     flex-direction: column;
   }
 
-  .experience-heading-img-div {
-    width: 100%;
-    height: 490px;
-  }
-
-  .experience-heading-text-div {
-    width: 100%;
-    height: 204.3px;
-    /* background-color: yellow; */
-  }
-
   .experience-heading-text-h1 {
     font-size: 30px;
     color: #001c55;
-    /* background-color: yellowgreen; */
     margin-top: 0px;
   }
 
@@ -167,8 +156,8 @@ body {
     font-size: 20px;
     height: 80px;
     color: #001c55;
-    /* background-color: violet; */
     margin-top: 0px;
+    text-align: justify;
   }
 
   .experience-heading-text-p {
@@ -176,10 +165,9 @@ body {
     font-size: 16px;
     font-weight: 600;
     color: #7f8daa;
-    /* background-color: turquoise; */
-    margin: 20px;
-    margin-top: 0px;
     line-height: 20px;
+    margin: 0 auto;
+    text-align: justify;
   }
 
   .experience-accord {
