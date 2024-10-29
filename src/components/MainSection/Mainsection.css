@@ -185,7 +185,129 @@ body {
   height: 100%;
 }
 
-@media screen and (max-width: 480px) {
+.skill-main-container {
+  width: 100%;
+  height: 630px;
+  margin-top: 4.2rem;
+}
+
+.skill-heading-div {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.skill-heading {
+  width: 90%;
+  color: #001c55;
+  height: 150px;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-main-div {
+  width: 100%;
+  height: 460px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-sub-div {
+  width: 90%;
+  height: 100%;
+  display: flex;
+}
+
+.skill-ul {
+  display: flex;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 120px;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skill-li {
+  list-style: none;
+}
+
+.skill-li .icon {
+  font-size: 24px;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.mongodb {
+  color: #23da20;
+  background-color: #5b4209;
+}
+
+.express {
+  color: white;
+  background-color: #4b4a4d;
+}
+
+.react {
+  color: white;
+  background-color: #1d85bb;
+}
+
+.node {
+  color: white;
+  background-color: #80dc2a;
+}
+
+.skill-left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -25px;
+}
+
+.mern-png {
+  width: 100%;
+  height: 420px;
+  background-color: #edf9fe;
+}
+
+.skill-right {
+  width: 50%;
+  height: 100%;
+  margin-top: 2rem;
+}
+
+.skill-h {
+  font-size: 30px;
+  color: #001c55;
+  width: 100%;
+  display: flex;
+}
+
+.skill-text {
+  display: flex;
+  line-height: 1.5rem;
+  font-size: 20px;
+  color: #7f8daa;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 767px) {
   .greeting-text-p {
     margin-top: 1rem;
   }
@@ -233,9 +355,6 @@ body {
     width: 80%;
     height: auto;
   }
-}
-
-@media only screen and (max-width: 767px) {
   .main-section-sub-container {
     display: flex;
     flex-direction: column;
@@ -286,34 +405,138 @@ body {
     width: 100%;
     height: 100%;
   }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .greeting-text {
-    font-size: 36px;
+  .skill-main-container {
+    width: 100%;
+    height: 100%;
+    margin-top: 210px;
   }
 
-  .greeting-text-p {
-    font-size: 20px;
-    margin-top: 1.5rem;
-    margin-bottom: 30px;
+  .skill-ul {
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 120px;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
   }
 
-  .main-btn {
+  .skill-li {
+    list-style: none;
+  }
+
+  .skill-li .icon {
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .mongodb {
+    color: #23da20;
+    background-color: #5b4209;
+  }
+
+  .express {
+    color: white;
+    background-color: #4b4a4d;
+  }
+
+  .react {
+    color: white;
+    background-color: #1d85bb;
+  }
+
+  .node {
+    color: white;
+    background-color: #80dc2a;
+  }
+
+  .skill-sub-div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .mern-png {
+    width: 100%;
+    height: 100%;
+  }
+
+  .skill-right {
+    width: 100%;
+    order: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .skill-heading-div {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .skill-heading {
+    width: 100%;
+    height: auto;
+    font-size: 30px;
+  }
+
+  .skill-h {
+    font-size: 25px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .skill-ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+  }
+
+  .skill-li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .skill-text-div {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+  }
+
+  .skill-text {
     font-size: 16px;
-    padding: 12px 24px;
+    line-height: 1.5rem;
+    text-align: justify;
+    word-wrap: break-word;
   }
 
-  .greeting-image-div {
-    margin-top: -230px;
-  }
-
-  .social-media-div {
-    margin-top: 5rem;
-  }
-
-  .portfolio-repo-btn {
-    margin-top: 3rem;
+  .skill-left {
+    order: 2;
+    width: 100%;
+    margin-top: 20px;
   }
 }
 

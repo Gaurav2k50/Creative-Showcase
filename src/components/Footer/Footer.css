@@ -11,8 +11,8 @@
   align-items: center;
   justify-content: center;
   background-color: #f8f9fa;
-  position: relative;
-  margin-top: auto;
+  display: block;
+  margin-top: 1rem;
 }
 
 .footer-sub-div {
@@ -32,10 +32,10 @@
 
 @media only screen and (max-width: 600px) {
   .footer-main-div {
-    /* margin-top: 520px; */
     height: auto;
     padding: 10px 0;
-    position: relative;
+    display: block;
+    margin-top: 1rem;
   }
 
   .footer-p {
