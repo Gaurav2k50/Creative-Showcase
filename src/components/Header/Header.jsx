@@ -20,41 +20,40 @@ const Header = () => {
   ];
 
   return (
-    <>
-      <header className="header">
-        <div className="logo">
-          <span className="logo-text">GauravSingh</span>
-        </div>
+    <header className="header">
+      <div className="logo">
+        <span className="logo-text">GauravSingh</span>
+      </div>
 
-        <span
-          className="menu-icon"
-          aria-expanded={showMenu}
-          aria-label="Toggle menu"
-          onClick={toggleMenu}
-        >
-          {showMenu ? <AiOutlineClose size="35px" /> : <LuMenu size="35px" />}{" "}
-          {/* Conditionally render icons */}
-        </span>
+      <span
+        className="menu-icon"
+        aria-expanded={showMenu}
+        aria-label="Toggle menu"
+        onClick={toggleMenu}
+      >
+        {showMenu ? <AiOutlineClose size="35px" /> : <LuMenu size="35px" />}
+      </span>
 
-        <ul className={`menu ${showMenu ? "menu-open show" : ""}`}>
-          {menuItems.map(({ name, path }) => (
-            <li key={name}>
-              <Link
-                to={path}
-                className="menu-items"
-                onClick={() => {
-                  if (path !== location.pathname) {
-                    setShowMenu(false);
-                  }
-                }}
-              >
-                {name}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </header>
-    </>
+      <ul className={`menu ${showMenu ? "menu-open show" : ""}`}>
+        {menuItems.map(({ name, path }) => (
+          <li key={name}>
+            <Link
+              to={path}
+              className={`menu-items ${
+                location.pathname === path ? "active" : ""
+              }`}
+              onClick={() => {
+                if (path !== location.pathname) {
+                  setShowMenu(false);
+                }
+              }}
+            >
+              {name}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </header>
   );
 };
 

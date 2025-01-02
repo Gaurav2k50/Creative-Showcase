@@ -188,7 +188,7 @@ body {
 .skill-main-container {
   width: 100%;
   height: 630px;
-  margin-top: 4.2rem;
+  /* margin-top: 2rem; */
 }
 
 .skill-heading-div {
@@ -289,7 +289,7 @@ body {
 .skill-right {
   width: 50%;
   height: 100%;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .skill-h {

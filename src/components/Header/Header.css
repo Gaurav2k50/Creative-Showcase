@@ -21,11 +21,12 @@ body {
   padding: 1rem 2rem;
   width: 100%;
   margin: 0 auto;
-  background-color: #a6e1fa;
+  background: linear-gradient(90deg, #a6e1fa, #91d6f4);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  position: sticky;
   top: 0;
+  position: sticky;
   z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
@@ -44,21 +45,28 @@ body {
   font-weight: 500;
   list-style: none;
   cursor: pointer;
-  gap: 15px;
+  gap: 20px;
 }
 
 .menu-items {
   text-decoration: none;
   color: #001c55;
-  padding: 15px;
+  padding: 10px 15px;
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 .menu-items:hover {
+  background: linear-gradient(90deg, #fdfbfb, #ebedee);
+  color: #001c55;
+  transform: scale(1.1);
+}
+
+.menu-items.active {
+  background: linear-gradient(90deg, #91d6f4, #a6e1fa);
+  color: #fff;
   font-weight: bold;
-  background-color: rgba(255, 255, 255, 0.8);
-  color: #000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   transform: scale(1.05);
 }
 
@@ -80,7 +88,7 @@ body {
   opacity: 0;
   transform: translateY(-10px);
   background-color: #a6e1fa;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .menu-open.show {
@@ -116,7 +124,7 @@ body {
     margin: 0 20px;
   }
 
-  .menu-items {
+  /* .menu-items {
     padding: 1rem;
     width: auto;
     text-align: left;
@@ -124,7 +132,31 @@ body {
 
   .menu-items:hover {
     font-weight: bold;
-    background-color: #a6e1fa;
-    color: #000;
+    background: linear-gradient(90deg, #91d6f4, #a6e1fa);
+    color: #fff;
+  } */
+
+  .menu-items {
+    width: 100%;
+    color: #001c55;
+    border-radius: 8px;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  }
+
+  .menu-items:hover {
+    background: linear-gradient(90deg, #fdfbfb, #ebedee);
+    color: #001c55;
+    transform: scale(1.1);
+  }
+
+  .menu-items.active {
+    width: 100%;
+    color: #fff;
+    font-weight: bold;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(90deg, #91d6f4, #a6e1fa);
   }
 }

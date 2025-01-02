@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -33,4 +33,95 @@ body {
   font-size: 35px;
   font-weight: 500;
   color: #001c55;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #edf9fe;
+}
+
+.OpenSource {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem 0;
+}
+
+.organizations {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.organizations-header-div {
+  margin-bottom: 2rem;
+}
+
+.organizations-header {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #001c55;
+  border-bottom: 4px solid #91d6f4;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.organizations-main-div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.org-card {
+  background-color: #fff;
+  border: 1px solid #e3e8ee;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.org-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.org-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #001c55;
+  margin-bottom: 0.5rem;
+}
+
+.org-description {
+  font-size: 1rem;
+  color: #4a4a4a;
+  margin-bottom: 1rem;
+}
+
+.org-link {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #0077cc;
+  text-decoration: none;
+  background: linear-gradient(90deg, #a6e1fa, #91d6f4);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.org-link:hover {
+  background: linear-gradient(90deg, #91d6f4, #0077cc);
+  transform: scale(1.05);
+  color: white;
 }

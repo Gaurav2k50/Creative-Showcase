@@ -8,14 +8,51 @@ import {
   FaTwitter,
   FaFacebookF,
   FaInstagram,
+  FaReact,
 } from "react-icons/fa";
 import { BsGoogle } from "react-icons/bs";
 import { TiSocialLinkedin } from "react-icons/ti";
 import skillMern from "../../assets/images/skillmern.png";
-import { SiMongodb } from "react-icons/si";
-import { SiExpress } from "react-icons/si";
-import { FaReact } from "react-icons/fa6";
+import { SiMongodb, SiExpress } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
+
+const socialLinks = [
+  {
+    href: "https://github.com/Gaurav2k50",
+    icon: <FaGithub />,
+    className: "github",
+  },
+  {
+    href: "https://www.linkedin.com/in/gaurav2k50/",
+    icon: <TiSocialLinkedin />,
+    className: "linkedin",
+  },
+  {
+    href: "https://www.youtube.com/@ezecoding",
+    icon: <FaYoutube />,
+    className: "youtube",
+  },
+  {
+    href: "mailto:gaurav2k50@gmail.com",
+    icon: <BsGoogle />,
+    className: "email",
+  },
+  {
+    href: "https://x.com/Gaurav2k01",
+    icon: <FaTwitter />,
+    className: "twitter",
+  },
+  {
+    href: "https://www.facebook.com/profile.php",
+    icon: <FaFacebookF />,
+    className: "facebook",
+  },
+  {
+    href: "https://www.instagram.com/___iamgaurav/",
+    icon: <FaInstagram />,
+    className: "instagram",
+  },
+];
 
 const Mainsection = () => {
   return (
@@ -29,69 +66,32 @@ const Mainsection = () => {
               </div>
               <p className="greeting-text-p">
                 A passionate individual who always thrives to work on <br />
-                end-to-end products which develop sustainable and <br />{" "}
+                end-to-end products which develop sustainable and <br />
                 scalable social and technical systems to create impact.
               </p>
               <div className="social-media-div">
-                <a
-                  href="https://github.com/Gaurav2k50"
-                  className="social-media-icons github"
-                  target="_blank"
-                >
-                  <FaGithub className="icon" size="25px" color="white" />
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/gaurav2k50/"
-                  className="social-media-icons linkedin"
-                  target="_blank"
-                >
-                  <TiSocialLinkedin
-                    className="icon"
-                    size="30px"
-                    color="white"
-                  />
-                </a>
-                <a
-                  href="https://www.youtube.com/@ezecoding"
-                  className="social-media-icons youtube"
-                  target="_blank"
-                >
-                  <FaYoutube className="icon" size="20px" color="white" />
-                </a>
-                <a
-                  href="mailto:gaurav2k50@gmail.com"
-                  className="social-media-icons email"
-                  target="_blank"
-                >
-                  <BsGoogle className="icon" size="20px" color="white" />
-                </a>
-                <a
-                  href="https://x.com/Gaurav2k01"
-                  className="social-media-icons twitter"
-                  target="_blank"
-                >
-                  <FaTwitter className="icon" size="20px" color="white" />
-                </a>
-                <a
-                  href="https://www.facebook.com/profile.php"
-                  className="social-media-icons facebook"
-                  target="_blank"
-                >
-                  <FaFacebookF className="icon" size="20px" color="white" />
-                </a>
-                <a
-                  href="https://www.instagram.com/___iamgaurav/"
-                  className="social-media-icons instagram"
-                  target="_blank"
-                >
-                  <FaInstagram className="icon" size="20px" color="white" />
-                </a>
+                {socialLinks.map(({ href, icon, className }, index) => (
+                  <a
+                    key={index}
+                    href={href}
+                    className={`social-media-icons ${className}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {React.cloneElement(icon, {
+                      className: "icon",
+                      size: "20px",
+                      color: "white",
+                    })}
+                  </a>
+                ))}
               </div>
               <div className="portfolio-repo-btn">
                 <a
                   href="https://github.com/Gaurav2k50"
                   className="a"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <button className="main-btn">
                     <RiStarFill size="22px" className="star-icon" />
@@ -117,7 +117,7 @@ const Mainsection = () => {
         <div className="skill-main-div">
           <div className="skill-sub-div">
             <div className="skill-left">
-              <img src={skillMern} alt="" className="mern-png" />
+              <img src={skillMern} alt="MERN Stack" className="mern-png" />
             </div>
 
             <div className="skill-right">
@@ -140,14 +140,10 @@ const Mainsection = () => {
                 <p className="skill-text">
                   ⚡ Crafting dynamic web applications with MongoDB, Express.js,
                   React.js, and Node.js (MERN stack)
-                  <br />
-                  <br />
                 </p>
                 <p className="skill-text">
                   ⚡ Building versatile mobile apps with Flutter, React Native,
                   and Kotlin for Android development
-                  <br />
-                  <br />
                 </p>
                 <p className="skill-text">
                   ⚡ Implementing robust server-side logic with Node.js,
