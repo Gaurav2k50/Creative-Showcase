@@ -7,13 +7,17 @@ const Experience = () => {
   const [openSection, setOpenSection] = useState(null);
 
   const sections = [
-    { id: "work", title: "Work", details: ["CITC The Hub Of It. Ltd."] },
+    { id: "work", title: "Work", details: ["CITC The Hub Of It. Pvt. Ltd."] },
     {
       id: "internships",
       title: "Internships",
       details: ["AI-ML Virtual Internship (AWS)"],
     },
-    { id: "research", title: "Research", details: ["IRJCH"] },
+    {
+      id: "research",
+      title: "Research",
+      details: ["International Research Journal of Computer Science (IRJCH)"],
+    },
   ];
 
   const toggleSection = (sectionId) => {
