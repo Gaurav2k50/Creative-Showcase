@@ -124,18 +124,6 @@ body {
     margin: 0 20px;
   }
 
-  /* .menu-items {
-    padding: 1rem;
-    width: auto;
-    text-align: left;
-  }
-
-  .menu-items:hover {
-    font-weight: bold;
-    background: linear-gradient(90deg, #91d6f4, #a6e1fa);
-    color: #fff;
-  } */
-
   .menu-items {
     width: 100%;
     color: #001c55;
