@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
+// import Footer from "../../components/Footer/Footer";
 import Education from "../../components/Education/Education";
 
 export default function index() {
@@ -8,7 +8,7 @@ export default function index() {
     <>
       <Header />
       <Education />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
