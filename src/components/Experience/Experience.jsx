@@ -7,7 +7,7 @@ const Experience = () => {
   const [openSection, setOpenSection] = useState(null);
 
   const sections = [
-    { id: "work", title: "Work", details: ["CITC The Hub Of It. Pvt. Ltd."] },
+    { id: "work", title: "Work", details: ["CITC The Hub Of It Pvt. Ltd."] },
     {
       id: "internships",
       title: "Internships",

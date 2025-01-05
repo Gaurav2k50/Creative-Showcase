@@ -62,7 +62,13 @@ const Mainsection = () => {
           <div className="left-main-container">
             <div className="left-mid-container">
               <div className="name-text">
-                <h1 className="greeting-text">Gaurav Singh</h1>
+                <h1 className="greeting-text">
+                  {"Gaurav                                                             Singh"
+                    .split("")
+                    .map((letter, index) => (
+                      <span key={index}>{letter}</span>
+                    ))}
+                </h1>
               </div>
               <p className="greeting-text-p">
                 A passionate individual who always thrives to work on <br />

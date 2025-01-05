@@ -5,385 +5,198 @@
 }
 
 body {
-  background-color: #edf9fe;
+  background-color: #f5f7fa;
+  font-family: "Roboto", sans-serif;
+  color: #333;
 }
 
 .projects-main-div {
   width: 100%;
-  height: 100%;
-  /* background-color: aquamarine; */
+  padding: 2rem 1rem;
   display: flex;
-  align-items: center;
-  /* justify-content: center; */
   flex-direction: column;
+  align-items: center;
 }
 
 .project-sub-div {
   width: 90%;
-  height: 370px;
-  /* background-color: turquoise; */
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
 }
 
 .projects-heading-img-div {
-  width: 50%;
-  height: 368.542px;
-  /* background-color: blanchedalmond; */
+  flex: 1 1 40%;
+  max-width: 350px;
+  margin: auto;
 }
 
 .projects-heading-img {
   width: 100%;
-  height: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
 .projects-heading-text-div {
-  width: 50%;
-  height: 368.542px;
-  /* background-color: gray; */
-  gap: 1rem;
+  flex: 1 1 50%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  text-align: center;
+  padding: 0 1rem;
 }
 
 .projects-heading-text-h1 {
-  font-size: 50px;
+  font-size: 2.5rem;
+  font-weight: 700;
   color: #001c55;
-  height: 55px;
-  width: 100%;
-  display: block;
-  font-weight: 550;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* background-color: yellowgreen; */
+  margin-bottom: 1rem;
 }
 
 .projects-heading-text-p {
-  width: 100%;
-  height: 120px;
-  color: #7f8daa;
   font-size: 20px;
-  /* background-color: yellow; */
-  line-height: 1.8rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 600;
+  font-weight: 550;
+  line-height: 1.5;
+  color: #7f8daa;
   text-align: justify;
 }
 
 .repo-cards-div-main {
-  height: 550px;
-  width: 90%;
-  /* background-color: #001c55; */
-  margin-top: 3.7rem;
   display: grid;
-  align-items: center;
-  justify-content: center;
-  column-gap: 25px;
-  row-gap: 0px;
-  grid-template-columns: auto auto auto;
-  /* padding: 10px; */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  width: 90%;
 }
 
 .repo-card-div {
-  width: 362px;
-  height: 250px;
-  background-color: #a6e1fa;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  /* background-color: #e54f26; */
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .repo-card-div:hover {
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .repo-react-reveal {
-  /* background-color: #7f8daa; */
-  width: 319.781px;
-  height: 188.792px;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  /* background-color: yellowgreen; */
+  gap: 1rem;
 }
 
 .repo-react-reveal-a {
   text-decoration: none;
+  color: inherit;
+  transition: color 0.3s;
+}
+
+.repo-react-reveal-a:hover {
+  color: #2563eb;
 }
 
 .repo-name-div {
-  /* background-color: yellow; */
-  width: 100%;
-  height: 30px;
   display: flex;
-  color: #001c55;
-  font-size: 25px;
-  font-weight: 700;
+  align-items: center;
   gap: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1e3a8a;
 }
 
 .repo-description {
-  /* background-color: yellowgreen; */
-  width: 100%;
-  /* height: 100%; */
-  font-size: 16px;
-  color: #001c55;
-  margin-top: 0.8rem;
+  font-size: 0.9rem;
+  color: #4b5563;
+  line-height: 1.6;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 3.5rem;
 }
 
 .repo-details {
-  /* background-color: wheat; */
-  margin-top: 1rem;
-  width: 100%;
-  height: 88px;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
 }
 
 .repo-creation-date {
-  width: 50%;
-  height: 100%;
-  color: #7f8daa;
-  font-size: 15px;
-  /* background-color: blueviolet; */
-}
-
-.dev-icons-languages {
-  list-style-type: none;
+  font-size: 0.9rem;
+  color: #6b7280;
 }
 
 .software-skills-main-div {
-  width: 50%;
-  height: 100%;
-  /* background-color: violet; */
-  font-size: 32px;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.dev-icons-languages {
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
 }
 
 .software-skill-language {
-  display: flex;
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.html {
-  color: #e54f26;
-}
-
-.css {
-  color: #264de4;
-}
-
-.js {
-  color: yellow;
-}
-
-.firebase {
-  color: #fa9703;
+  font-size: 1.5rem;
+  color: #6b7280;
 }
 
 .project-button {
-  width: 90%;
-  /* background-color: #7f8daa; */
-  height: 68px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 1rem;
-  margin-bottom: 4rem;
+  margin-top: 2rem;
 }
 
 .main-button {
   text-decoration: none;
-  height: 47px;
-  width: 185px;
-  background-color: #001c55;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
   font-weight: 500;
-  letter-spacing: 1px;
-  color: #edf9fe;
-  border: 1px solid #001c55;
-  border-radius: 6px;
+  color: #ffffff;
+  background-color: #1e3a8a;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s;
 }
 
 .main-button:hover {
-  color: #001c55;
-  background-color: #edf9fe;
-  transition: 0.3s ease-in-out;
+  background-color: #2563eb;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .project-sub-div {
-    height: 100%;
-    display: flex;
     flex-direction: column;
-  }
-
-  .projects-heading-img-div {
-    width: 100%;
-    height: 441px;
-    margin-top: 20px;
-  }
-
-  .projects-heading-img {
-    width: 100%;
-    height: 241px;
+    align-items: center;
+    text-align: center;
   }
 
   .projects-heading-text-div {
-    width: 100%;
-    height: 149px;
-    margin-top: -115px;
-  }
-
-  .projects-heading-text-h1 {
-    font-size: 30px;
-  }
-
-  .projects-heading-text-p {
-    font-size: 14px;
-    text-align: justify;
-    line-height: 1.4rem;
+    padding: 0;
   }
 
   .repo-cards-div-main {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-  }
-
-  .repo-card-div {
-    width: 100%;
-    height: 207px;
-  }
-
-  .repo-react-reveal {
-    width: 100%;
-    height: 160px;
-  }
-
-  .repo-name-div {
-    font-size: 16px;
-    width: 100%;
-    height: 20px;
-    margin-bottom: 10px;
-    text-align: justify;
-    padding: 0 20px;
-  }
-
-  .repo-description {
-    font-size: 14px;
-    width: 100%;
-    height: 100%;
-    text-align: justify;
-    margin: 0 auto;
-    padding: 0 20px;
-    line-height: 1.4rem;
-  }
-
-  .repo-creation-date subtitle {
-    font-size: 14px;
-  }
-
-  .repo-creation-date {
-    font-size: 13px;
-  }
-
-  .repo-details {
-    width: 100%;
-    height: 60px;
-    display: flex;
-    /* align-items: baseline; */
-    margin-top: 100px;
-
-    text-align: justify;
-    /* margin: 0 auto; */
-    padding: 0 20px;
-    line-height: 1.4rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
   }
 }
 
-@media screen and (max-width: 1100px) {
-  .project-sub-div {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .projects-heading-img-div {
-    width: 100%;
-    height: 441px;
-  }
-
-  .projects-heading-text-div {
-    width: 100%;
-    height: 149px;
-  }
-
+@media screen and (max-width: 480px) {
   .projects-heading-text-h1 {
-    font-size: 30px;
+    font-size: 2rem;
   }
 
   .projects-heading-text-p {
-    font-size: 16px;
-  }
-
-  .repo-cards-div-main {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-  }
-
-  .repo-card-div {
-    width: 100%;
-    height: 207px;
-  }
-
-  .repo-react-reveal {
-    width: 100%;
-    height: 160px;
-  }
-
-  .node {
-    background-color: green;
-  }
-
-  .mongodb {
-    background-color: greenyellow;
-  }
-
-  .repo-name-div {
-    font-size: 16px;
-    width: 100%;
-    height: 20px;
+    font-size: 0.9rem;
   }
 
   .repo-description {
-    font-size: 14px;
-    width: 100%;
-    height: 20px;
+    font-size: 0.85rem;
+    max-height: 3rem;
   }
 
-  .repo-creation-date subtitle {
-    font-size: 14px;
-  }
-
-  .repo-details {
-    width: 100%;
-    height: 60px;
-    display: flex;
+  .repo-name-div {
+    font-size: 1rem;
   }
 }

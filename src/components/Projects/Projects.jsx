@@ -15,19 +15,34 @@ const projects = [
     date: "2024-20-12",
     url: "https://github.com/Gaurav2k50/Admin-panel",
     icons: [
-      <DiCss3 size="30px" />,
-      <FaReact size="30px" />,
-      <FaNodeJs size="30px" />,
-      <DiMongodb size="30px" />,
+      <DiCss3 size="30px" style={{ color: "#264de4" }} />, // Blue for CSS
+      <FaReact size="30px" style={{ color: "#61DBFB" }} />, // React color
+      <FaNodeJs size="30px" style={{ color: "#83CD29" }} />, // Node.js color
+      <DiMongodb size="30px" style={{ color: "#47A248" }} />, // MongoDB color
+    ],
+  },
+  {
+    name: "ShopEase-Ecommerce ",
+    description:
+      "ShopEase Ecommerce is a robust platform built with React.js, CSS3, Tailwind CSS and Firebase, integrating Razorpay for secure payments. It features a responsive user interface, a powerful admin das…",
+    date: "Jul 3, 2024",
+    url: "https://shop-ease-ecommerce.vercel.app/",
+    icons: [
+      <DiCss3 size="30px" style={{ color: "#264de4" }} />,
+      <FaReact size="30px" style={{ color: "#61DBFB" }} />,
+      <IoLogoFirebase size="30px" style={{ color: "#FFCA28" }} />,
     ],
   },
   {
     name: "Amazon-Clone",
     description:
-      "🔥 Built a responsive Amazon clone using React.js and CSS, featuring a user-friendly interface and seamless shopping experience..",
+      "🔥 Built a responsive Amazon clone using React.js and CSS, featuring a user-friendly interface and seamless shopping experience...",
     date: "2024-03-02",
     url: "https://github.com/Gaurav2k50/react-amazon-clone.git",
-    icons: [<DiCss3 size="30px" />, <FaReact size="30px" />],
+    icons: [
+      <DiCss3 size="30px" style={{ color: "#264de4" }} />,
+      <FaReact size="30px" style={{ color: "#61DBFB" }} />,
+    ],
   },
   {
     name: "Gadget-Wave-Frontend",
@@ -35,15 +50,10 @@ const projects = [
       "🔥 Presenting Gadget Wave Frontend: A dynamic React.js and SCSS-powered e-commerce platform offering the latest in electronic products...",
     date: "2024-02-02",
     url: "https://github.com/Gaurav2k50/gadget-wave-frontend.git",
-    icons: [<BsFiletypeScss size="30px" />, <FaReact size="30px" />],
-  },
-  {
-    name: "Radiant-Assignment",
-    description:
-      "🔥 Developed a dynamic website using HTML, CSS, and JavaScript, showcasing skills in frontend web development for a company task..",
-    date: "2024-03-05",
-    url: "https://github.com/Gaurav2k50/Radiant-Riches---Assignment.git",
-    icons: [<DiCss3 size="30px" />, <FaReact size="30px" />],
+    icons: [
+      <BsFiletypeScss size="30px" />,
+      <FaReact size="30px" style={{ color: "#61DBFB" }} />,
+    ],
   },
   {
     name: "ReactAuthFirebaseApp",
@@ -52,9 +62,9 @@ const projects = [
     date: "2024-03-10",
     url: "https://github.com/Gaurav2k50/ReactAuthFirebaseApp.git",
     icons: [
-      <DiCss3 size="30px" />,
-      <IoLogoFirebase size="30px" />,
-      <FaReact size="30px" />,
+      <DiCss3 size="30px" style={{ color: "#264de4" }} />,
+      <FaReact size="30px" style={{ color: "#61DBFB" }} />,
+      <IoLogoFirebase size="30px" style={{ color: "#FFCA28" }} />,
     ],
   },
   {
@@ -64,9 +74,9 @@ const projects = [
     date: "2024-04-01",
     url: "https://github.com/Gaurav2k50/Tic-Tac-Toe-App.git",
     icons: [
-      <DiCss3 size="30px" />,
-      <IoLogoFirebase size="30px" />,
-      <FaReact size="30px" />,
+      <DiCss3 size="30px" style={{ color: "#264de4" }} />,
+      <FaReact size="30px" style={{ color: "#61DBFB" }} />,
+      <IoLogoFirebase size="30px" style={{ color: "#FFCA28" }} />,
     ],
   },
 ];
