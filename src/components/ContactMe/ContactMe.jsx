@@ -80,7 +80,7 @@ const ContactMe = () => {
           </div>
           <div className="resume-btn-div">
             <a
-              href="https://drive.google.com/file/d/1oFFOmRrsnadaCfzdSuRu3No3nycCkUet/view?usp=sharing"
+              href="https://drive.google.com/file/d/1jhgGRWY5pNgBEm5S_cmPNOi2lHXTphe9/view?usp=sharing"
               className="main-button"
               target="_blank"
               rel="noopener noreferrer"

@@ -10,7 +10,7 @@ body {
 
 .experience-main-div {
   width: 100%;
-  height: 105vh;
+  height: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -76,7 +76,7 @@ body {
 
 .experience-accord {
   width: 90%;
-  height: 169px;
+  height: 100%;
   margin-top: 3.1rem;
 }
 

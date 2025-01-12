@@ -9,7 +9,6 @@ const SplashScreen = () => {
       setShowSplash(false);
     }, 1000);
 
-    // Cleanup the timeout if the component unmounts
     return () => clearTimeout(timer);
   }, []);
 
