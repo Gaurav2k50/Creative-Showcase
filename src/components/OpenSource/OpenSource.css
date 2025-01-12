@@ -11,7 +11,7 @@ body {
 .OpenSource {
   width: 100%;
   min-height: 100vh;
-  background-color: #f0f4f8;
+  background-color: #edf9fe;
   display: flex;
   justify-content: center;
   align-items: flex-start;

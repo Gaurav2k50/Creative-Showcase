@@ -5,6 +5,10 @@ import collgLogo from "../../assets/images/cllgLogo.png";
 import virtual from "../../assets/images/virtual.png";
 import iitbombay from "../../assets/images/iitbombay.png";
 import irjcs from "../../assets/images/irjcs.png";
+import edupng1 from "../../assets/images/edupng1.png";
+import edupng2 from "../../assets/images/edupng2.png";
+import edupng4 from "../../assets/images/edupng4.png";
+import edupng3 from "../../assets/images/edupng3.png";
 
 const Education = () => {
   return (
@@ -21,16 +25,24 @@ const Education = () => {
           <div className="competitive-site-main-div">
             <ul className="dev-icon">
               <li className="competitive-sites-inline">
-                <a href="">SVG</a>
+                <a href="">
+                  <img src={edupng1} alt="" width={40} />
+                </a>
               </li>
               <li className="competitive-sites-inline">
-                <a href="">SVG</a>
+                <a href="">
+                  <img src={edupng2} alt="" width={40} />
+                </a>
               </li>
               <li className="competitive-sites-inline">
-                <a href="">SVG</a>
+                <a href="">
+                  <img src={edupng3} alt="" width={40} />
+                </a>
               </li>
               <li className="competitive-sites-inline">
-                <a href="">SVG</a>
+                <a href="">
+                  <img src={edupng4} alt="" width={40} />
+                </a>
               </li>
             </ul>
           </div>
