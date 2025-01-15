@@ -10,9 +10,11 @@ import {
   FaInstagram,
   FaReact,
 } from "react-icons/fa";
+import { SiCss3, SiBootstrap, SiTailwindcss, SiMui } from "react-icons/si";
 import { BsGoogle } from "react-icons/bs";
 import { TiSocialLinkedin } from "react-icons/ti";
 import skillMern from "../../assets/images/skillmern.png";
+import skillFront from "../../assets/images/skillFrontend.png";
 import { SiMongodb, SiExpress } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 
@@ -57,10 +59,10 @@ const socialLinks = [
 const Mainsection = () => {
   return (
     <>
-      <div className="main-section">
-        <div className="main-section-sub-container">
-          <div className="left-main-container">
-            <div className="left-mid-container">
+      <div className="main-container">
+        <div className="main-content">
+          <div className="left-section">
+            <div className="intro-section">
               <div className="name-text">
                 <h1 className="greeting-text">
                   {"Gaurav                                                             Singh"
@@ -70,12 +72,12 @@ const Mainsection = () => {
                     ))}
                 </h1>
               </div>
-              <p className="greeting-text-p">
+              <p className="introduction">
                 A passionate individual who always thrives to work on <br />
                 end-to-end products which develop sustainable and <br />
                 scalable social and technical systems to create impact.
               </p>
-              <div className="social-media-div">
+              <div className="social-icons">
                 {socialLinks.map(({ href, icon, className }, index) => (
                   <a
                     key={index}
@@ -107,8 +109,8 @@ const Mainsection = () => {
               </div>
             </div>
           </div>
-          <div className="right-main-container">
-            <div className="greeting-image-div">
+          <div className="right-section">
+            <div className="image-container">
               <img src={GauravImg} alt="Gaurav Singh" className="main-image" />
             </div>
           </div>
@@ -119,6 +121,8 @@ const Mainsection = () => {
         <div className="skill-heading-div">
           <h1 className="skill-heading">What I Do?</h1>
         </div>
+
+        {/* First Skill  */}
 
         <div className="skill-main-div">
           <div className="skill-sub-div">
@@ -154,6 +158,54 @@ const Mainsection = () => {
                 <p className="skill-text">
                   ⚡ Implementing robust server-side logic with Node.js,
                   Express.js, and MongoDB for scalable backend solutions
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Second Skill  */}
+
+        <div className="skill-main-div">
+          <div className="skill-sub-div">
+            <div className="skill-left">
+              <img
+                src={skillFront}
+                alt="Front End"
+                className="frontend-png skill-frontend"
+              />
+            </div>
+
+            <div className="skill-right">
+              <p className="skill-h">Front End Development</p>
+              <ul className="skill-ul">
+                <li className="skill-li">
+                  <SiCss3 className="icon css" />
+                </li>
+                <li className="skill-li">
+                  <SiBootstrap className="icon bootstrap" />
+                </li>
+                <li className="skill-li">
+                  <SiTailwindcss className="icon tailwind" />
+                </li>
+                <li className="skill-li">
+                  <SiMui className="icon material-ui" />
+                </li>
+                <li className="skill-li">
+                  <FaReact className="icon node" />
+                </li>
+              </ul>
+              <div className="skill-text-div">
+                <p className="skill-text">
+                  ⚡ Designing highly attractive user interface for mobile and
+                  web applications
+                </p>
+                <p className="skill-text">
+                  ⚡ Customizing logo designs and building logos from scratch
+                </p>
+                <p className="skill-text">
+                  ⚡ Creating the flow of application functionalities to
+                  optimize user experience
                 </p>
               </div>
             </div>

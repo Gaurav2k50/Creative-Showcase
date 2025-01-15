@@ -8,7 +8,7 @@ body {
   background-color: #edf9fe;
 }
 
-.main-section {
+.main-container {
   width: 100%;
   height: 550px;
   display: flex;
@@ -16,13 +16,13 @@ body {
   justify-content: center;
 }
 
-.main-section-sub-container {
+.main-content {
   width: 90%;
   height: 599.896px;
   display: flex;
 }
 
-.left-main-container {
+.left-section {
   width: 100%;
   height: 100%;
   display: flex;
@@ -30,7 +30,7 @@ body {
   justify-content: center;
 }
 
-.left-mid-container {
+.intro-section {
   width: 100%;
   height: 378.781px;
 }
@@ -88,7 +88,7 @@ body {
   }
 }
 
-.greeting-text-p {
+.introduction {
   font-size: 20px;
   height: 140px;
   width: 100%;
@@ -99,7 +99,11 @@ body {
   align-items: center;
 }
 
-.social-media-div {
+.skill-text-div {
+  padding: 0 10px;
+}
+
+.social-icons {
   width: 100%;
   height: 60px;
   display: flex;
@@ -216,7 +220,7 @@ body {
   text-decoration: none;
 }
 
-.right-main-container {
+.right-section {
   width: 50%;
   height: 100%;
   display: flex;
@@ -232,7 +236,6 @@ body {
 .skill-main-container {
   width: 100%;
   height: 630px;
-  /* margin-top: 2rem; */
 }
 
 .skill-heading-div {
@@ -276,16 +279,10 @@ body {
 
 .skill-ul {
   display: flex;
-  gap: 10px;
-  padding: 0;
-  list-style: none;
-  display: flex;
+  justify-content: center;
+  margin-top: 10px;
   flex-wrap: wrap;
-  width: 100%;
-  height: 120px;
-  gap: 2rem;
-  align-items: center;
-  justify-content: space-between;
+  gap: 1.5rem;
 }
 
 .skill-li {
@@ -293,33 +290,45 @@ body {
 }
 
 .skill-li .icon {
-  font-size: 24px;
-  width: 70px;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
+  font-size: 3rem;
+  margin: 0.5rem;
+}
+
+.icon {
+  font-size: 2rem;
+  margin: 0.5rem;
 }
 
 .mongodb {
-  color: #23da20;
-  background-color: #5b4209;
+  color: #47a248;
 }
 
 .express {
-  color: white;
-  background-color: #4b4a4d;
+  color: #000000;
 }
 
 .react {
-  color: white;
-  background-color: #1d85bb;
+  color: #61dbfb;
 }
 
 .node {
-  color: white;
-  background-color: #80dc2a;
+  color: #8cc84b;
+}
+
+.css {
+  color: #1572b6;
+}
+
+.bootstrap {
+  color: #7952b3;
+}
+
+.tailwind {
+  color: #38bdf8;
+}
+
+.material-ui {
+  color: #0081cb;
 }
 
 .skill-left {
@@ -333,7 +342,14 @@ body {
 
 .mern-png {
   width: 100%;
+  height: 350px;
+  background-color: #edf9fe;
+}
+
+.skill-frontend {
+  width: 100%;
   height: 420px;
+  margin-right: 40px;
   background-color: #edf9fe;
 }
 
@@ -359,11 +375,57 @@ body {
 }
 
 @media only screen and (max-width: 767px) {
-  .greeting-text-p {
+  .skill-main-div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill-sub-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .skill-left,
+  .skill-right {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .mern-png {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+  }
+
+  .frontend-png {
+    height: 300px;
+  }
+
+  .skill-text-div {
+    padding: 0 10px;
+  }
+
+  .skill-ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .skill-frontend {
+    margin-top: 180px;
+    margin-left: 40px;
+  }
+
+  .introduction {
     margin-top: 1rem;
   }
 
-  .social-media-div {
+  .social-icons {
     width: 100%;
     height: auto;
     display: flex;
@@ -385,18 +447,18 @@ body {
     justify-content: center;
   }
 
-  .left-mid-container {
+  .intro-section {
     height: 100%;
   }
 
-  .right-main-container {
+  .right-section {
     margin-top: 4rem;
     width: 100%;
     display: flex;
     justify-content: center;
   }
 
-  .greeting-image-div {
+  .image-container {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -406,18 +468,19 @@ body {
     width: 80%;
     height: auto;
   }
-  .main-section-sub-container {
+
+  .main-content {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .left-main-container {
+  .left-section {
     order: 1;
     text-align: center;
   }
 
-  .right-main-container {
+  .right-section {
     order: 2;
     margin-bottom: 20px;
     flex-basis: 20%;
@@ -432,13 +495,13 @@ body {
     font-size: 28px;
   }
 
-  .greeting-text-p {
+  .introduction {
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 20px;
   }
 
-  .social-media-div {
+  .social-icons {
     margin-top: 1rem;
   }
 
@@ -462,74 +525,33 @@ body {
     margin-top: 210px;
   }
 
-  .skill-ul {
-    display: flex;
-    gap: 10px;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 120px;
-    gap: 2rem;
-    align-items: center;
-    justify-content: space-between;
-  }
-
   .skill-li {
     list-style: none;
   }
 
   .skill-li .icon {
-    font-size: 24px;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    font-size: 2rem;
+    margin: 0.5rem;
   }
 
   .mongodb {
-    color: #23da20;
-    background-color: #5b4209;
+    color: #47a248;
   }
 
   .express {
-    color: white;
-    background-color: #4b4a4d;
+    color: #000000;
   }
 
   .react {
-    color: white;
-    background-color: #1d85bb;
+    color: #61dbfb;
   }
 
   .node {
-    color: white;
-    background-color: #80dc2a;
+    color: #8cc84b;
   }
 
-  .skill-sub-div {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .mern-png {
-    width: 100%;
-    height: 100%;
-  }
-
-  .skill-right {
-    width: 100%;
-    order: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  .material-ui {
+    color: #0081cb;
   }
 
   .skill-heading-div {
@@ -555,13 +577,8 @@ body {
     justify-content: center;
   }
   .skill-ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     flex-wrap: wrap;
     gap: 1.5rem;
-    margin: 0 auto;
-    width: 100%;
     height: auto;
   }
 
@@ -571,44 +588,32 @@ body {
     align-items: center;
   }
 
-  .skill-text-div {
-    margin: 0 auto;
-    width: 100%;
-    height: 100%;
-  }
-
   .skill-text {
     font-size: 16px;
     line-height: 1.5rem;
     text-align: justify;
     word-wrap: break-word;
   }
-
-  .skill-left {
-    order: 2;
-    width: 100%;
-    margin-top: 20px;
-  }
 }
 
 @media only screen and (min-width: 1025px) {
-  .main-section {
+  .main-container {
     padding: 50px 0;
   }
 
-  .main-section-sub-container {
+  .main-content {
     display: flex;
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
   }
 
-  .left-main-container {
+  .left-section {
     flex: 1;
     padding-right: 50px;
   }
 
-  .right-main-container {
+  .right-section {
     flex: 1;
   }
 
@@ -616,14 +621,14 @@ body {
     font-size: 48px;
   }
 
-  .greeting-text-p {
+  .introduction {
     font-size: 20px;
     margin-bottom: 40px;
     margin-top: 2rem;
     line-height: 3rem;
   }
 
-  .social-media-div {
+  .social-icons {
     margin-bottom: 40px;
   }
 
