@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Mainsection.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { RiStarFill } from "react-icons/ri";
 import GauravImg from "../../assets/images/Gauravmainimg.jpeg";
 import {
@@ -57,13 +59,29 @@ const socialLinks = [
 ];
 
 const Mainsection = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+      easing: "ease",
+    });
+  }, []);
+
   return (
     <>
       <div className="main-container">
         <div className="main-content">
-          <div className="left-section">
+          <div
+            className="left-section"
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
             <div className="intro-section">
-              <div className="name-text">
+              <div
+                className="name-text"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
                 <h1 className="greeting-text">
                   {"Gaurav                                                             Singh"
                     .split("")
@@ -72,12 +90,20 @@ const Mainsection = () => {
                     ))}
                 </h1>
               </div>
-              <p className="introduction">
+              <p
+                className="introduction"
+                data-aos="fade-up"
+                data-aos-delay="600"
+              >
                 A passionate individual who always thrives to work on <br />
                 end-to-end products which develop sustainable and <br />
                 scalable social and technical systems to create impact.
               </p>
-              <div className="social-icons">
+              <div
+                className="social-icons"
+                data-aos="fade-up"
+                data-aos-delay="800"
+              >
                 {socialLinks.map(({ href, icon, className }, index) => (
                   <a
                     key={index}
@@ -94,7 +120,11 @@ const Mainsection = () => {
                   </a>
                 ))}
               </div>
-              <div className="portfolio-repo-btn">
+              <div
+                className="portfolio-repo-btn"
+                data-aos="fade-up"
+                data-aos-delay="1000"
+              >
                 <a
                   href="https://github.com/Gaurav2k50"
                   className="a"
@@ -109,7 +139,11 @@ const Mainsection = () => {
               </div>
             </div>
           </div>
-          <div className="right-section">
+          <div
+            className="right-section"
+            data-aos="fade-left"
+            data-aos-delay="200"
+          >
             <div className="image-container">
               <img src={GauravImg} alt="Gaurav Singh" className="main-image" />
             </div>
@@ -118,19 +152,27 @@ const Mainsection = () => {
       </div>
 
       <div className="skill-main-container">
-        <div className="skill-heading-div">
+        <div className="skill-heading-div" data-aos="fade-up">
           <h1 className="skill-heading">What I Do?</h1>
         </div>
 
         {/* First Skill  */}
 
-        <div className="skill-main-div">
+        <div className="skill-main-div" data-aos="fade-up">
           <div className="skill-sub-div">
-            <div className="skill-left">
+            <div
+              className="skill-left"
+              data-aos="fade-right"
+              data-aos-delay="200"
+            >
               <img src={skillMern} alt="MERN Stack" className="mern-png" />
             </div>
 
-            <div className="skill-right">
+            <div
+              className="skill-right"
+              data-aos="fade-left"
+              data-aos-delay="200"
+            >
               <p className="skill-h">MERN Stack Development</p>
               <ul className="skill-ul">
                 <li className="skill-li">
@@ -166,9 +208,13 @@ const Mainsection = () => {
 
         {/* Second Skill  */}
 
-        <div className="skill-main-div">
+        <div className="skill-main-div" data-aos="fade-up">
           <div className="skill-sub-div">
-            <div className="skill-left">
+            <div
+              className="skill-left"
+              data-aos="fade-right"
+              data-aos-delay="200"
+            >
               <img
                 src={skillFront}
                 alt="Front End"
@@ -176,7 +222,11 @@ const Mainsection = () => {
               />
             </div>
 
-            <div className="skill-right">
+            <div
+              className="skill-right"
+              data-aos="fade-left"
+              data-aos-delay="200"
+            >
               <p className="skill-h">Front End Development</p>
               <ul className="skill-ul">
                 <li className="skill-li">

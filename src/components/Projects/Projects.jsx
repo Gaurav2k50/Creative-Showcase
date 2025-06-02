@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Projects.css";
 import Project from "../../assets/images/project.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { DiCss3, DiMongodb } from "react-icons/di";
 import { FaReact, FaNodeJs } from "react-icons/fa";
 import { BsFiletypeScss } from "react-icons/bs";
@@ -81,57 +83,82 @@ const projects = [
   },
 ];
 
-const Projects = () => (
-  <div className="projects-main-div">
-    <div className="project-sub-div">
-      <div className="projects-heading-img-div">
-        <img
-          src={Project}
-          alt="Project Thumbnail"
-          className="projects-heading-img"
-        />
-      </div>
-      <div className="projects-heading-text-div">
-        <h1 className="projects-heading-text-h1">Projects</h1>
-        <p className="projects-heading-text-p">
-          My projects make use of a variety of modern tools. I enjoy creating
-          Data Science projects and deploying them to web applications using
-          cloud infrastructure.
-        </p>
-      </div>
-    </div>
+const Projects = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+      easing: "ease",
+    });
+  }, []);
 
-    <div className="repo-cards-div-main">
-      {projects.map(({ name, description, date, url, icons }, index) => (
-        <div key={index} className="repo-card-div">
-          <div className="repo-react-reveal">
-            <a
-              href={url}
-              className="repo-react-reveal-a"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className="repo-name-div">
-                <span>
-                  <PiBookBookmarkLight size="19px" />
-                </span>
-                <p>{name}</p>
-              </div>
-              <div className="repo-description">{description}</div>
-              <div className="repo-details">
-                <p className="repo-creation-date subtitle">Created on {date}</p>
-                <div className="software-skills-main-div">
-                  <ul className="dev-icons-languages">
-                    <li className="software-skill-language">{icons}</li>
-                  </ul>
-                </div>
-              </div>
-            </a>
-          </div>
+  return (
+    <div className="projects-main-div">
+      <div className="project-sub-div" data-aos="fade-up">
+        <div
+          className="projects-heading-img-div"
+          data-aos="fade-right"
+          data-aos-delay="200"
+        >
+          <img
+            src={Project}
+            alt="Project Thumbnail"
+            className="projects-heading-img"
+          />
         </div>
-      ))}
+        <div
+          className="projects-heading-text-div"
+          data-aos="fade-left"
+          data-aos-delay="200"
+        >
+          <h1 className="projects-heading-text-h1">Projects</h1>
+          <p className="projects-heading-text-p">
+            My projects make use of a variety of modern tools. I enjoy creating
+            Data Science projects and deploying them to web applications using
+            cloud infrastructure.
+          </p>
+        </div>
+      </div>
+
+      <div className="repo-cards-div-main">
+        {projects.map(({ name, description, date, url, icons }, index) => (
+          <div
+            key={index}
+            className="repo-card-div"
+            data-aos="fade-up"
+            data-aos-delay={200 * (index % 3)} // Stagger effect for each row (3 cards per row)
+          >
+            <div className="repo-react-reveal">
+              <a
+                href={url}
+                className="repo-react-reveal-a"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="repo-name-div">
+                  <span>
+                    <PiBookBookmarkLight size="19px" />
+                  </span>
+                  <p>{name}</p>
+                </div>
+                <div className="repo-description">{description}</div>
+                <div className="repo-details">
+                  <p className="repo-creation-date subtitle">
+                    Created on {date}
+                  </p>
+                  <div className="software-skills-main-div">
+                    <ul className="dev-icons-languages">
+                      <li className="software-skill-language">{icons}</li>
+                    </ul>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default Projects;

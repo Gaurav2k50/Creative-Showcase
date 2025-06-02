@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./ContactMe.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import myImg from "../../assets/images/contact-myimg.jpg";
 import contactBlog from "../../assets/images/contact-blog.png";
 import contactAddress from "../../assets/images/contact-address.png";
@@ -14,6 +16,14 @@ import { BsGoogle } from "react-icons/bs";
 import { TiSocialLinkedin } from "react-icons/ti";
 
 const ContactMe = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+      easing: "ease",
+    });
+  }, []);
+
   const socialLinks = [
     {
       href: "https://github.com/Gaurav2k50",
@@ -54,11 +64,19 @@ const ContactMe = () => {
 
   return (
     <div className="contact-main">
-      <section className="contact-heading">
-        <div className="contact-heading-img-div">
+      <section className="contact-heading" data-aos="fade-up">
+        <div
+          className="contact-heading-img-div"
+          data-aos="fade-right"
+          data-aos-delay="200"
+        >
           <img src={myImg} alt="Profile" className="contact-my-img" />
         </div>
-        <div className="contact-heading-text-div">
+        <div
+          className="contact-heading-text-div"
+          data-aos="fade-left"
+          data-aos-delay="200"
+        >
           <h1 className="contact-heading-text">Contact Me</h1>
           <p className="contact-heading-detail-text">
             I am available on almost every social media. You can message me, and
@@ -91,36 +109,64 @@ const ContactMe = () => {
         </div>
       </section>
 
-      <section className="blog-section">
-        <div className="blog-heading-text-div">
+      <section className="blog-section" data-aos="fade-up">
+        <div
+          className="blog-heading-text-div"
+          data-aos="fade-right"
+          data-aos-delay="200"
+        >
           <h1 className="blog-heading-text">Blogs</h1>
           <p className="blog-heading-details-text">
             I like to write powerful lessons that create impact on each reader,
             inspiring individual empowerment.
           </p>
           <div className="button-div">
-            <a href="#" className="main-button">
+            {" "}
+            <a
+              href="https://your-blog-url.com"
+              className="main-button"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Visit My Blogsite
             </a>
           </div>
         </div>
-        <div className="blog-heading-img-div">
+        <div
+          className="blog-heading-img-div"
+          data-aos="fade-left"
+          data-aos-delay="200"
+        >
           <img src={contactBlog} alt="Blogs" className="responsive-img" />
         </div>
       </section>
 
-      <section className="address-section">
-        <div className="address-heading-img-div">
+      <section className="address-section" data-aos="fade-up">
+        <div
+          className="address-heading-img-div"
+          data-aos="fade-right"
+          data-aos-delay="200"
+        >
           <img src={contactAddress} alt="Address" className="responsive-img" />
         </div>
-        <div className="address-heading-text-div">
+        <div
+          className="address-heading-text-div"
+          data-aos="fade-left"
+          data-aos-delay="200"
+        >
           <h1 className="address-heading-text">Address</h1>
           <p className="address-heading-details-text">
             Jamshedpur, Gamharia, T.A.-Adityapur, Dist.-Saraikella-Khrashwan,
             Jharkhand - 832108
           </p>
           <div className="button-div">
-            <a href="#" className="main-button main-visit">
+            {" "}
+            <a
+              href="https://www.google.com/maps/place/Gamharia,+Jharkhand+832108"
+              className="main-button main-visit"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Visit on Google Maps
             </a>
           </div>
