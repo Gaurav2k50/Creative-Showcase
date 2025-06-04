@@ -115,7 +115,21 @@ body {
 }
 
 .dropdown li {
-  padding: 0.5rem 0;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.dropdown li:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.dropdown li:last-child {
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 600px) {

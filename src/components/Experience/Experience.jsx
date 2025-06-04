@@ -21,7 +21,7 @@ const Experience = () => {
     {
       id: "internships",
       title: "Internships",
-      details: ["AI-ML Virtual Internship (AWS)"],
+      details: ["AI-ML Virtual Internship (AWS)", "DevOps Intern"],
     },
     {
       id: "research",
@@ -85,24 +85,26 @@ const Experience = () => {
               >
                 {title}
                 <span>{openSection === id ? <FiMinus /> : <FiPlus />}</span>
-              </div>
+              </div>{" "}
               {openSection === id && (
-                <ul
+                <div
                   className="dropdown"
                   data-aos="fade-down"
                   data-aos-duration="500"
                 >
-                  {details.map((detail, index) => (
-                    <li
-                      key={index}
-                      className="experience-accord-li-div"
-                      data-aos="fade-right"
-                      data-aos-delay={200 * index}
-                    >
-                      {detail}
-                    </li>
-                  ))}
-                </ul>
+                  <ul className="dropdown-grid">
+                    {details.map((detail, index) => (
+                      <li
+                        key={index}
+                        className="experience-accord-li-div"
+                        data-aos="fade-right"
+                        data-aos-delay={200 * index}
+                      >
+                        {detail}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               )}
             </li>
           ))}
