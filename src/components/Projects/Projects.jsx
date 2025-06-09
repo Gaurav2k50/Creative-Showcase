@@ -8,8 +8,22 @@ import { FaReact, FaNodeJs } from "react-icons/fa";
 import { BsFiletypeScss } from "react-icons/bs";
 import { IoLogoFirebase } from "react-icons/io5";
 import { PiBookBookmarkLight } from "react-icons/pi";
+import { SiTailwindcss, SiTypescript, SiVite } from "react-icons/si";
 
 const projects = [
+  {
+    name: "StackLoop-Website",
+    description:
+      "🔥 Official website of StackLoop — a modern tech company focused on delivering scalable, high-performance web solutions. Built with React and Tailwind CSS...",
+    date: "2025-09-06",
+    url: "https://stack-loop-website.vercel.app/",
+    icons: [
+      <FaReact size="30px" style={{ color: "#61DBFB" }} />,
+      <SiTailwindcss size="30px" style={{ color: "#06B6D4" }} />,
+      <SiTypescript size="30px" style={{ color: "#3178C6" }} />,
+      <SiVite size="30px" style={{ color: "#646CFF" }} />,
+    ],
+  },
   {
     name: "Admin Panel",
     description:
@@ -69,18 +83,6 @@ const projects = [
       <IoLogoFirebase size="30px" style={{ color: "#FFCA28" }} />,
     ],
   },
-  {
-    name: "Tic-Tac-Toe-App",
-    description:
-      "🔥 Created a dynamic Tic-Tac-Toe app using React, CSS for styling, and Firebase for real-time game updates. Experience the classic game with modern technology!..",
-    date: "2024-04-01",
-    url: "https://github.com/Gaurav2k50/Tic-Tac-Toe-App.git",
-    icons: [
-      <DiCss3 size="30px" style={{ color: "#264de4" }} />,
-      <FaReact size="30px" style={{ color: "#61DBFB" }} />,
-      <IoLogoFirebase size="30px" style={{ color: "#FFCA28" }} />,
-    ],
-  },
 ];
 
 const Projects = () => {
@@ -126,7 +128,7 @@ const Projects = () => {
             key={index}
             className="repo-card-div"
             data-aos="fade-up"
-            data-aos-delay={200 * (index % 3)} // Stagger effect for each row (3 cards per row)
+            data-aos-delay={200 * (index % 3)}
           >
             <div className="repo-react-reveal">
               <a
