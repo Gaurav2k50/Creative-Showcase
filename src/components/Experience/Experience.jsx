@@ -21,7 +21,7 @@ const Experience = () => {
     {
       id: "internships",
       title: "Internships",
-      details: ["AI-ML Virtual Internship (AWS)", "DevOps Intern"],
+      details: ["AI-ML Virtual Internship (AWS)", "Software Engineer Intern"],
     },
     {
       id: "research",

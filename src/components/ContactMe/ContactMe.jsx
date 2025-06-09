@@ -98,7 +98,7 @@ const ContactMe = () => {
           </div>
           <div className="resume-btn-div">
             <a
-              href="https://drive.google.com/file/d/1G5--FAYUebwFRRBG5aTK-8hgEdPbTSs2/view?usp=sharing"
+              href="https://drive.google.com/file/d/1B5GEUp-eL3mgkQSGI7aCZ4VDBiRWd0ag/view?usp=sharing"
               className="main-button"
               target="_blank"
               rel="noopener noreferrer"
