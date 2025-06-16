@@ -12,11 +12,11 @@ import { SiTailwindcss, SiTypescript, SiVite } from "react-icons/si";
 
 const projects = [
   {
-    name: "StackLoop-Website",
+    name: "Codinark-website",
     description:
-      "🔥 Official website of StackLoop — a modern tech company focused on delivering scalable, high-performance web solutions. Built with React and Tailwind CSS...",
+      "🔥 Official website of Codinark — a modern tech company focused on delivering scalable, high-performance web solutions. Built with React and Tailwind CSS...",
     date: "2025-09-06",
-    url: "https://stack-loop-website.vercel.app/",
+    url: "https://codinark-website.vercel.app/",
     icons: [
       <FaReact size="30px" style={{ color: "#61DBFB" }} />,
       <SiTailwindcss size="30px" style={{ color: "#06B6D4" }} />,
